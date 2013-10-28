@@ -30,5 +30,5 @@ and changing this line to indicate a different port number:
 Included Versions
 -----------------
 jetty: 8.1.8.v20121106
-solr: 4.0.0
-fedora: 3.6.2
+solr: 4.3.0
+fedora: 3.7
