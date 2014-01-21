@@ -31,4 +31,4 @@ Included Versions
 -----------------
 jetty: 8.1.8.v20121106
 solr: 4.3.0
-fedora: 3.7
+fedora: 3.7.1
