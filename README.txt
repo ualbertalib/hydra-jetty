@@ -2,7 +2,7 @@ HYDRA-JETTY
 --------------------------
 This is a copy of jetty pre-installed with various applications needed by Hydra 
 applications.
-Most notably, these include fedora (http://fedora-commons.org/) and 
+Most notably, these include Fedora 4 alpha 4 (https://github.com/futures/fcrepo4/releases/tag/fcrepo-4.0.0-alpha-4) and 
 solr (http://lucene.apache.org/solr/).  
 
 To run, use 
@@ -17,7 +17,6 @@ When jetty is finished initializing itself, Solr is available at
 and fedora is available at 
 
 	http://localhost:8983/fedora/
-  http://localhost:8983/fedora-test/
 
 You can see a list of all installed applications at http://localhost:8983
 
@@ -31,4 +30,4 @@ Included Versions
 -----------------
 jetty: 8.1.8.v20121106
 solr: 4.3.0
-fedora: 3.7.1
+fedora: 4.0.0a4 
