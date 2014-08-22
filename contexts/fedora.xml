@@ -2,5 +2,5 @@
 <!DOCTYPE Configure PUBLIC "-//Jetty//Configure//EN" "http://www.eclipse.org/jetty/configure.dtd">
 <Configure class="org.eclipse.jetty.webapp.WebAppContext">
   <Set name="contextPath">/fedora</Set>
-  <Set name="war"><SystemProperty name="jetty.home" default="."/>/webapps/fcrepo-webapp-4.0.0-beta-01.war</Set>
+  <Set name="war"><SystemProperty name="jetty.home" default="."/>/webapps/fcrepo-webapp-4.0.0-beta-02.war</Set>
 </Configure>
