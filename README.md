@@ -7,7 +7,7 @@ This is a copy of jetty with the needed applications for running Hydra.  These i
 
 ## Included Versions
 
-* jetty: 8.1.8.v20121106
+* jetty: 8.1.10.v20130312
 * solr: 4.9.0
 * fedora: 3.7.1
 
@@ -16,6 +16,11 @@ This is a copy of jetty with the needed applications for running Hydra.  These i
 ### Dependencies
 
 * [Java 7 (JRE)](https://java.com/en/download/index.jsp)
+
+#### Java 6
+
+Java 6 is unsupported under Solr 4.9, but still supported under Fedora 3.7.1.  However, hydra-jetty has only been tested under
+Java 7 so it is recommended to use Java 7 and not Java 6.
 
 ### Manual
   
@@ -54,3 +59,11 @@ and an additional copy for testing:
 You can see a list of all installed applications at
 
 * [http://localhost:8983](http://localhost:8983)
+
+### Updating
+
+#### Solr and Jetty
+
+Solr is updated by downloading the latest from [Lucene](http://lucene.apache.org/solr/), which includes an instance of Jetty in the
+`example` directory.  Updating is a process of replacing the jar files as well as the solr.war and start.jar files.  Note that the
+example from Lucene does not include the start.ini file.
