@@ -9,4 +9,5 @@ fcrepo4-data
 logs/*
 derby.log
 jettywrapper.log
-velocity.log
+velocity.log*
+*.log
