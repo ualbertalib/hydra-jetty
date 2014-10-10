@@ -67,3 +67,15 @@ You can see a list of all installed applications at
 Solr is updated by downloading the latest from [Lucene](http://lucene.apache.org/solr/), which includes an instance of Jetty in the
 `example` directory.  Updating is a process of replacing the jar files as well as the solr.war and start.jar files.  Note that the
 example from Lucene does not include the start.ini file.
+
+## Fedora Migration
+
+Fedora4 is currently available in the `fedora-4/master` branch and can be automatically downloaded and installed via Jettywrapper
+using this url:
+
+    https://github.com/projecthydra/hydra-jetty/archive/fedora-4/master.zip
+
+If you want to give migration a try, the `fedora-4/migration` branch has both Fedora3 and Fedora4 installed, along with Solr, and is available
+via this url:
+
+    https://github.com/projecthydra/hydra-jetty/archive/fedora-4/migrate.zip
