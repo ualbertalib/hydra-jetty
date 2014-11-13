@@ -9,7 +9,7 @@ This is a copy of jetty with the needed applications for running Hydra.  These i
 
 * jetty: 8.1.10.v20130312
 * solr: 4.9.0
-* fedora: 4.0.0b2
+* fedora: 4.0.0
 
 ## Usage
 
@@ -21,7 +21,7 @@ This is a copy of jetty with the needed applications for running Hydra.  These i
   
     git clone https://github.com/projecthydra/hydra-jetty
     cd hydra-jetty
-    java -Xmx256m -XX:MaxPermSize=256m -jar start.jar
+    java -jar start.jar
 
 You can also change the port jetty starts on by editing the file etc/jetty.xml and changing this line to indicate a different port number:
 
