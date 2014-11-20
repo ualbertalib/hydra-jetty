@@ -21,7 +21,7 @@ This is a copy of jetty with the needed applications for running Hydra.  These i
   
     git clone https://github.com/projecthydra/hydra-jetty
     cd hydra-jetty
-    java -jar start.jar
+    java -Xmx512m -XX:MaxPermSize=512m -jar start.jar
 
 You can also change the port jetty starts on by editing the file etc/jetty.xml and changing this line to indicate a different port number:
 
