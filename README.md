@@ -7,9 +7,9 @@ This is a copy of jetty with the needed applications for running Hydra.  These i
 
 ## Included Versions
 
-* jetty: 8.1.10.v20130312
+* jetty: 8.1.16
 * solr: 4.9.0
-* fedora: 3.7.1
+* fedora: 4.0.0
 
 ## Usage
 
@@ -17,16 +17,11 @@ This is a copy of jetty with the needed applications for running Hydra.  These i
 
 * [Java 7 (JRE)](https://java.com/en/download/index.jsp)
 
-#### Java 6
-
-Java 6 is unsupported under Solr 4.9, but still supported under Fedora 3.7.1.  However, hydra-jetty has only been tested under
-Java 7 so it is recommended to use Java 7 and not Java 6.
-
 ### Manual
   
     git clone https://github.com/projecthydra/hydra-jetty
     cd hydra-jetty
-    java -Xmx256m -XX:MaxPermSize=256m -jar start.jar
+    java -Xmx512m -XX:MaxPermSize=512m -jar start.jar
 
 You can also change the port jetty starts on by editing the file etc/jetty.xml and changing this line to indicate a different port number:
 
@@ -48,13 +43,9 @@ When jetty is finished initializing itself, Solr is available at
 
 * [http://localhost:8983/solr/](http://localhost:8983/solr/)
 
-Fedora is available in two copies, one for developement
+and Fedora is available at
 
 * [http://localhost:8983/fedora/](http://localhost:8983/fedora/)
-
-and an additional copy for testing:
-
-* [http://localhost:8983/fedora-test/](http://localhost:8983/fedora-test/)
 
 You can see a list of all installed applications at
 
