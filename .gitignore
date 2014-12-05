@@ -26,3 +26,4 @@ fedora/test/server/fedora-internal-use/has-started.txt
 logs/*
 derby.log
 jettywrapper.log
+*.log
