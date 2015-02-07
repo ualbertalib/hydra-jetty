@@ -9,7 +9,7 @@ This is a copy of jetty with the needed applications for running Hydra.  These i
 
 * jetty: 8.1.16
 * solr: 4.10.2
-* fedora: 4.0.0
+* fedora: 4.1.0
 
 ## Usage
 
@@ -61,12 +61,7 @@ example from Lucene does not include the start.ini file.
 
 ## Fedora Migration
 
-Fedora4 is currently available in the `fedora-4/master` branch and can be automatically downloaded and installed via Jettywrapper
-using this url:
-
-    https://github.com/projecthydra/hydra-jetty/archive/fedora-4/master.zip
-
-If you want to give migration a try, the `fedora-4/migration` branch has both Fedora3 and Fedora4 installed, along with Solr, and is available
+For tesing migration from Fedora version 3 to 4, the `fedora-4/migration` branch has both Fedora 3 and Fedora 4 installed, along with Solr, and is available
 via this url:
 
     https://github.com/projecthydra/hydra-jetty/archive/fedora-4/migrate.zip
