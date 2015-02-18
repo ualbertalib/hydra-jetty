@@ -46,6 +46,8 @@ When jetty is finished initializing itself, Solr is available at
 and Fedora is available at
 
 * [http://localhost:8983/fedora/](http://localhost:8983/fedora/)
+* basic authorization is enabled an requires the username/password `fedoraAdmin/fedoraAdmin`
+* this is configured under [jetty-users.properties](resources/jetty-users.properties)
 
 You can see a list of all installed applications at
 
