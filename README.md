@@ -15,7 +15,7 @@ This is a copy of jetty with the needed applications for running Hydra.  These i
 
 ### Dependencies
 
-* [Java 7 (JRE)](https://java.com/en/download/index.jsp)
+* [Java 8 (JRE)](https://java.com/en/download/index.jsp)
 
 ### Manual
   
