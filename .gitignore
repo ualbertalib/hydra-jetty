@@ -27,3 +27,6 @@ logs/*
 derby.log
 jettywrapper.log
 *.log
+
+# OS-specific files
+.DS_Store
