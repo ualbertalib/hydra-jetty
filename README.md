@@ -7,9 +7,9 @@ This is a copy of jetty with the needed applications for running Hydra.  These i
 
 ## Included Versions
 
-* jetty: 8.1.16
-* solr: 4.10.3
-* fedora: 4.2.2
+* Jetty: 8.1.16
+* Solr: 4.10.3
+* Fedora: 4.3.0
 
 ## Usage
 
@@ -18,10 +18,10 @@ This is a copy of jetty with the needed applications for running Hydra.  These i
 * [Java 8 (JRE)](https://java.com/en/download/index.jsp)
 
 ### Manual
-  
+
     git clone https://github.com/projecthydra/hydra-jetty
     cd hydra-jetty
-    java -Xmx512m -XX:MaxPermSize=512m -jar start.jar
+    java -Xmx512m -jar start.jar
 
 You can also change the port jetty starts on by editing the file etc/jetty.xml and changing this line to indicate a different port number:
 
@@ -35,11 +35,11 @@ For use within your Hydra application's Rails directory.
     rake jetty:start
 
 See [jettywrapper](https://github.com/projecthydra/jettywrapper) for more information regarding configuration and usage.
-Port numbers and other java options maybe configured via the gem. 
-    
+Port numbers and other java options maybe configured via the gem.
+
 ### Interaction
 
-When jetty is finished initializing itself, Solr is available at 
+When jetty is finished initializing itself, Solr is available at
 
 * [http://localhost:8983/solr/](http://localhost:8983/solr/)
 
