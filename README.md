@@ -2,20 +2,20 @@
 
 This is a copy of jetty with the needed applications for running Hydra.  These include two java-based applications:
 
-* [Fedora repository](https://github.com/futures/fcrepo4)
+* [Fedora repository](http://fedora-commons.org/)
 * [Solr](http://lucene.apache.org/solr/)
 
 ## Included Versions
 
 * Jetty: 8.1.16
 * Solr: 4.10.4
-* Fedora: 4.4.0
+* Fedora: 3.7.0
 
 ## Usage
 
 ### Dependencies
 
-* [Java 8 (JRE)](https://java.com/en/download/index.jsp)
+* [Java 7 (JRE)](https://java.com/en/download/index.jsp)
 
 ### Manual
 
@@ -47,23 +47,7 @@ and Fedora is available at
 
 * [http://localhost:8983/fedora/](http://localhost:8983/fedora/)
 * basic authorization is enabled an requires the username/password `fedoraAdmin/fedoraAdmin`
-* this is configured under [jetty-users.properties](resources/jetty-users.properties)
 
 You can see a list of all installed applications at
 
 * [http://localhost:8983](http://localhost:8983)
-
-### Updating
-
-#### Solr and Jetty
-
-Solr is updated by downloading the latest from [Lucene](http://lucene.apache.org/solr/), which includes an instance of Jetty in the
-`example` directory.  Updating is a process of replacing the jar files as well as the solr.war and start.jar files.  Note that the
-example from Lucene does not include the start.ini file.
-
-## Fedora Migration
-
-For tesing migration from Fedora version 3 to 4, the `fedora-4/migration` branch has both Fedora 3 and Fedora 4 installed, along with Solr, and is available
-via this url:
-
-    https://github.com/projecthydra/hydra-jetty/archive/fedora-4/migrate.zip
