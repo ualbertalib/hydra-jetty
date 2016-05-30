@@ -1,17 +1,31 @@
 <?xml version="1.0"?>
 <!DOCTYPE Configure PUBLIC "-//Jetty//Configure//EN" "http://www.eclipse.org/jetty/configure.dtd">
 <Configure class="org.eclipse.jetty.webapp.WebAppContext">
-  <Set name="contextPath">/fedora</Set>
-  <Set name="war"><SystemProperty name="jetty.home" default="."/>/webapps/fedora.war</Set>
-  <Set name="overrideDescriptor"><SystemProperty name="jetty.home" default="."/>/etc/fedora-override-web.xml</Set>
-  
-  <Get name="securityHandler">
-    <Set name="loginService">
-      <New class="org.eclipse.jetty.security.HashLoginService">
-        <Set name="name">fcrepo4</Set>
-        <Set name="config"><SystemProperty name="jetty.home" default="."/>/resources/jetty-users.properties</Set>
-      </New>
-    </Set>
-  </Get>
+    <Set name="contextPath">/fedora</Set>
+    <Set name="war"><SystemProperty name="jetty.home" default="."/>/webapps/fedora.war</Set>
+    <Set name="overrideDescriptor"><SystemProperty name="jetty.home" default="."/>/etc/fedora-override-web.xml</Set>
+    
+    <Get name="securityHandler">
+        <Set name="loginService">
+            <New class="org.eclipse.jetty.security.HashLoginService">
+                <Set name="name">fcrepo4</Set>
+                <Set name="config"><SystemProperty name="jetty.home" default="."
+                    />/resources/jetty-users.properties</Set>
+            </New>
+        </Set>
+    </Get>
 
+    <Array id="plusConfig" type="java.lang.String">
+        <Item>org.eclipse.jetty.webapp.WebInfConfiguration</Item>
+        <Item>org.eclipse.jetty.webapp.WebXmlConfiguration</Item>
+        <Item>org.eclipse.jetty.webapp.MetaInfConfiguration</Item>
+        <Item>org.eclipse.jetty.webapp.FragmentConfiguration</Item>
+        <Item>org.eclipse.jetty.plus.webapp.EnvConfiguration</Item>
+        <Item>org.eclipse.jetty.plus.webapp.PlusConfiguration</Item>
+        <Item>org.eclipse.jetty.annotations.AnnotationConfiguration</Item>
+        <Item>org.eclipse.jetty.webapp.JettyWebXmlConfiguration</Item>
+        <Item>org.eclipse.jetty.webapp.TagLibConfiguration</Item>
+    </Array>
+    <Set name="configurationClasses"><Ref refid="plusConfig"/></Set>
+    
 </Configure>
